@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paloma Valdez | Portafolio Creativo</title>
+    <style>
+        :root {
+            --verde-oscuro: #1a2e26; /* Color basado en tu video */
+            --rosa-acento: #ff99cc;
+            --blanco: #ffffff;
+            --gris-claro: #f4f4f4;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: var(--verde-oscuro);
+            color: var(--blanco);
+            line-height: 1.6;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(26, 46, 38, 0.8), rgba(26, 46, 38, 0.8)), url('tu-foto-de-fondo.jpg');
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: var(--rosa-acento);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            color: var(--rosa-acento);
+            border-bottom: 2px solid var(--rosa-acento);
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .video-container {
+            width: 100%;
+            margin: 40px 0;
+            border: 5px solid var(--rosa-acento);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--rosa-acento);
+            color: var(--verde-oscuro);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #121f1a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Paloma Valdez</h1>
+        <p class="subtitle">Diseñadora & Productora Audiovisual</p>
+        <a href="#contacto" class="btn">¡Hablemos!</a>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Mi Presentación</h2>
+        <div class="video-container">
+            <video width="100%" controls>
+                <source src="presentacion.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+
+        <h2 class="section-title">Experiencia</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>KPI Group</h3>
+                <p>Diseño de sitios web y catálogos industriales (2024 - Presente).</p>
+            </div>
+            <div class="card">
+                <h3>Ferrocuyo Global</h3>
+                <p>Branding, contenido audiovisual y gestión de comunidades.</p>
+            </div>
+            <div class="card">
+                <h3>Valdez Studio</h3>
+                <p>Freelance: Diseño gráfico y edición de video creativo.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="contacto">Contacto</h2>
+        <p>¿Tienes un proyecto en mente? Escríbeme:</p>
+        <p>📧 <strong>palomavaldezds@gmail.com</strong></p>
+        <p>📍 Mendoza, Argentina</p>
+        <a href="https://wa.me/542615714615" class="btn">WhatsApp</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Paloma Valdez - Hecho con creatividad.</p>
+    </footer>
+
+</body>
+</html>
